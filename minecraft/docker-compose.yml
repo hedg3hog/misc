@@ -1,7 +1,7 @@
 services:
   mc_server1:
       image: itzg/minecraft-server
-			restart: unless-stopped
+      restart: unless-stopped
       ports:
         - 25565:25565
         #- 25575:25575 # rcon port

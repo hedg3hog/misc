@@ -1,0 +1,23 @@
+services:
+  mc_server1:
+      image: itzg/minecraft-server
+			restart: unless-stopped
+      ports:
+        - 25565:25565
+        #- 25575:25575 # rcon port
+      
+      environment:
+        EULA: "TRUE"
+        TYPE: "PAPER"
+        VERSION: "LATEST"
+        INIT_MEMORY: "1G"
+        MAX_MEMORY: "4G"
+        DIFFICULTY: "normal"
+        ENABLE_WHITELIST: "true"
+        MOTD: "A Minecraft Server provided by hedg3hog"
+        #RCON_PASSWORD: "supersavepassword" # change this!
+        SERVER_NAME: "Möbelcrew Minecraft server"
+        OVERRIDE_SERVER_PROPERTIES: "false"
+
+      volumes:
+        - ~/mc_server1:/data

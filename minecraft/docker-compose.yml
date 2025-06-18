@@ -22,4 +22,4 @@ services:
         OVERRIDE_SERVER_PROPERTIES: "false"
 
       volumes:
-        - ~/mc_server1:/data
+        - ./mc_server1:/data

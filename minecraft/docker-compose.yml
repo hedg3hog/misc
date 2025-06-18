@@ -17,6 +17,7 @@ services:
         ENABLE_WHITELIST: "true"
         MOTD: "A Minecraft Server provided by hedg3hog"
         RCON_PASSWORD: ${RCON_PASSWORD} # change this!
+        RCON_PORT: "25575"
         SERVER_NAME: "Möbelcrew Minecraft server"
         OVERRIDE_SERVER_PROPERTIES: "false"
 

@@ -11,11 +11,11 @@ services:
         TYPE: "PAPER"
         VERSION: "LATEST"
         INIT_MEMORY: "1G"
-        MAX_MEMORY: "4G"
+        MAX_MEMORY: "3G"
         DIFFICULTY: "normal"
         ENABLE_WHITELIST: "true"
         MOTD: "A Minecraft Server provided by hedg3hog"
-        #RCON_PASSWORD: "supersavepassword" # change this!
+        RCON_PASSWORD: ${RCON_PASSWORD} # change this!
         SERVER_NAME: "Möbelcrew Minecraft server"
         OVERRIDE_SERVER_PROPERTIES: "false"
 
